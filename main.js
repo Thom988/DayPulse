@@ -1,4 +1,4 @@
-import { recupererSunriseSunset, genererUrl } from "./sunriseSunset.js";
+import { recupererSunriseSunset, genererUrl } from "./gestionnaireAPIsun.js";
 import {lancerHorloge} from "./gestionnaireHorloge.js"
 
 let url = "";
