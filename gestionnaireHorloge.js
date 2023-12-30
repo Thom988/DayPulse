@@ -1,7 +1,7 @@
 function recupererHeureLocale() {
     let date = new Date();
     let heureLocale = date.toLocaleTimeString('en-US');
-    let tab = [3];
+    let tab = [];
     tab = heureLocale.split(":");
     tab[3] = tab[2].substr(2,4);
     tab[2] = tab[2].substr(0,2);

@@ -3,10 +3,12 @@ body{
     padding: 0;
 }
 main {
+    padding: 50px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center; 
     background-color: #111A27;
+    height: 100vh;
 }
 
 /************************************************************ HORLOGE ******************************************************************************/
@@ -108,3 +110,37 @@ main {
 }
 
 /******************************************************** ClockBoard  ************************************************************************/
+
+#clock-board {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 450px;
+    margin-left: 50px;
+}
+
+#clock-board div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 60px;
+    width: 300px;
+
+}
+
+#clock-board label {
+    font-weight: 600;
+    color: #FBD3CB;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#clock-board p {
+    padding: 6px;
+    font-weight: 600;
+    color: #FBD3CB;
+    background-color: #1F1513;
+    font-family: 'Courier New', Courier, monospace;
+    border: 3px solid #6E2920;
+    border-radius: 5px;
+}
