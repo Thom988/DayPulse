@@ -1,14 +1,26 @@
 body{
     margin: 0;
     padding: 0;
+    background-color: #111A27;
 }
+
+header {
+    display: flex;
+}
+
+header h1 {
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Courier New', Courier, monospace;
+    color: #FBD3CB;
+    margin-left: 200px;
+}
+
 main {
-    padding: 50px;
     display: flex;
     flex-direction: row;
-    align-items: center; 
-    background-color: #111A27;
-    height: 100vh;
+    flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 /************************************************************ HORLOGE ******************************************************************************/
@@ -19,6 +31,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 30px;
 }
 
 .fleches {
@@ -116,7 +129,7 @@ main {
     flex-direction: column;
     flex-wrap: wrap;
     height: 450px;
-    margin-left: 50px;
+    margin: 50px 0 0 50px;
 }
 
 #clock-board div {
