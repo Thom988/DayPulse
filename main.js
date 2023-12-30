@@ -1,4 +1,5 @@
 import { recupererSunriseSunset, genererUrl } from "./sunriseSunset.js";
+import {lancerHorloge} from "./gestionnaireHorloge.js"
 
 let url = "";
 let sunriseSunset;
@@ -6,6 +7,8 @@ let sunriseSunset;
 async function main() {
   url = await genererUrl();
   sunriseSunset = await recupererSunriseSunset(url);
+  lancerHorloge();
+
   console.log(sunriseSunset);
   console.log(
     "Date " + sunriseSunset.results.date + "\n" +
@@ -25,33 +28,3 @@ async function main() {
 
 main();
 
-
-
-
-
-
-/*
-function recupererPosition() {
-  // Vérifier si le navigateur prend en charge la géolocalisation
-  if ("geolocation" in navigator) {
-    // Obtenez la position actuelle de l'utilisateur
-    navigator.geolocation.getCurrentPosition(
-      function (position) {
-        // Récupérer la latitude et la longitude depuis l'objet de position
-        latitude = position.coords.latitude;
-        longitude = position.coords.longitude;
-        url = `https://api.sunrisesunset.io/json?lat=${latitude}&lng=${longitude}`;
-      },
-      function (error) {
-        // En cas d'erreur lors de la récupération de la position
-        console.error("Erreur de géolocalisation: " + error.message);
-      }
-    );
-  } else {
-    // Si la géolocalisation n'est pas prise en charge par le navigateur
-    console.error(
-      "Désolé, La géolocalisation n'est pas prise en charge par ce navigateur :/"
-    );
-  }
-}
-*/

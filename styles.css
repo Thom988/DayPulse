@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    /* background: linear-gradient(to bottom,#7ce3ff00 0%,#7CE3FFFE 30%,#331e0b96 50% , #0D141F 60%) ; */
+    background-color: #111A27;
+}
+
+/************************************************************ HORLOGE ******************************************************************************/
+
+#horloge {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fleches {
+    border-radius: 20px;
+    /* border: 2px solid #6E2920; */
+}
+
+#fleche-h {
+    position: absolute;
+    height: 380px;
+    width: 15px;
+    background: linear-gradient(to top, rgba(240, 248, 255, 0) 50%, aliceblue 90%) ;
+    transform: rotate(0deg);
+    z-index: 0;
+}
+
+#fleche-m {
+    position: absolute;
+    height: 300px;
+    width: 5px;
+    background: linear-gradient(to top, rgba(240, 248, 255, 0) 50%, aliceblue 100%) ;
+    transform: rotate(100deg);
+    z-index: 1;
+}
+
+#fleche-s {
+    position: absolute;
+    height: 400px;
+    width: 3px;
+    background: linear-gradient(to top, rgba(240, 248, 255, 0) 50%, #6E2920 100%) ;
+    transform: rotate(120deg);
+    z-index: 2;
+}
+
+
+#centre {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #5E1C16;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.index {
+    position: absolute;
+    height: 500px;
+    width: 12px;
+    background: linear-gradient(to top,aliceblue 0%,  rgba(240, 248, 255, 0) 7%, rgba(240, 248, 255, 0) 93%, aliceblue 100%);
+}
+
+.rev {
+    transform: rotate(90deg);
+}
+
+
+.ss-index {
+    position: absolute;
+    height: 500px;
+    width: 3px;
+    background: linear-gradient(to top,aliceblue 0%,  rgba(240, 248, 255, 0) 5%, rgba(240, 248, 255, 0) 95%, aliceblue 100%);
+}
+
+#ss-index1 {
+    transform: rotate(30deg);
+}
+#ss-index2 {
+    transform: rotate(60deg);
+}
+#ss-index3 {
+    transform: rotate(120deg);
+}
+#ss-index4 {
+    transform: rotate(150deg);
+}
+
+
+
+/* .ss-index-heure {
+    position: absolute;
+    height: 500px;
+    width: 10px;
+    background: linear-gradient(to top,aliceblue 0%,  rgba(240, 248, 255, 0) 5%, rgba(240, 248, 255, 0) 95%, aliceblue 100%);
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************************************** GRAPHE CIRCULAIRE ************************************************************************/
+
+ /* #graph-circ {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#graph-circ div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+#graph-circ div:hover {
+    background-color: rgba(80, 255, 232, 0.623);
+} */
+
+/****** Position des parties du graphique circulaire ****************/
+
+/* #midi-sol {
+    clip-path: polygon(50% 50%, 0 20%, 0 0,100% 0, 100% 10%);
+}
+#heu-doree {
+    clip-path: polygon(50% 50%,100% 20%,100% 10%);
+}
+#cou-sol {
+    clip-path: polygon(50% 50%,100% 50%,100% 20%);
+}
+#crepus {
+    clip-path: polygon(50% 50%,100% 50%,100% 70%);
+}
+#dern-lum {
+    clip-path: polygon(50% 50%, 100% 70%,100% 80%);
+}
+#nuit {
+    clip-path: polygon(50% 50%,0 80%, 0% 100%, 100% 100%, 100% 80%);
+}
+#prem-lum {
+    clip-path: polygon(50% 50%, 0% 80%,0 70%);
+}
+#aube {
+    clip-path: polygon(50% 50%,0 70%,0 50%);
+}
+#lev-sol {
+    clip-path: polygon(50% 50%,0 50%,0 20%);
+}  */

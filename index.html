@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
-    <script type="module" src='main.js' defer></script>
-    <script type="module" src='sunriseSunset.js' defer></script>
-</head>
-<body>
-    <div class="Window">
-        <h1>Sunset Sunrise</h1>
-    </div>
-</body>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
+    <script type="module" src="gestionnaireTemps.js" defer></script>
+    <script type="module" src="sunriseSunset.js" defer></script>
+    <script type="module" src="main.js" defer></script>
+  </head>
+  <body>
+    <header id="header">
+      <h1>Sunset Sunrise</h1>
+    </header>
+    <main>
+      <div id="horloge">
+        <div id="centre"></div>
+        <div class="fleches" id="fleche-h"></div>
+        <div class="fleches" id="fleche-m"></div>
+        <div class="fleches" id="fleche-s"></div>
+        <div class="index"></div>
+        <div class="index rev"></div>
+        <div class="ss-index" id="ss-index1"></div>
+        <div class="ss-index" id="ss-index2"></div>
+        <div class="ss-index" id="ss-index3"></div>
+        <div class="ss-index" id="ss-index4"></div>
+        <div></div>
+      </div>
+      <!-- <div id="graph-circ">
+            <div id="midi-sol"></div>
+            <div id="heu-doree"></div>
+            <div id="cou-sol"></div>
+            <div id="crepus"></div>
+            <div id="dern-lum"></div>
+            <div id="nuit"></div>
+            <div id="prem-lum"></div>
+            <div id="aube"></div>
+            <div id="lev-sol"></div>
+        </div> -->
+    </main>
+  </body>
 </html>
